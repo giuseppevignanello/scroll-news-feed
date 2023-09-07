@@ -1,6 +1,7 @@
 import React from 'react'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import AppHeader from './components/AppHeader';
+import AppFooter from './components/AppFooter'
 
 const App = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -26,6 +27,7 @@ const App = () => {
           </div>
         </ScrollPage>
       </ScrollContainer>
+      <AppFooter></AppFooter>
     </div>
   )
 }
