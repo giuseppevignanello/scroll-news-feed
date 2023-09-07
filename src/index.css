@@ -1,4 +1,10 @@
-/* #region appHeader  */
+/* #region utilities */
+
+.bg_tertiary {
+  background: #ffdf2b;
+}
+
+/* #endregion appHeader  */
 .appHeader {
   position: fixed;
   width: 100%;
@@ -15,3 +21,13 @@
 }
 
 /* #endregion appHeader  */
+
+/* #region jumbotron */
+.jumbo_btn {
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 8px;
+
+}
+
+/* #endregion jumbotron */

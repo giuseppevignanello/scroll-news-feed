@@ -1,7 +1,8 @@
 import React from 'react'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import AppHeader from './components/AppHeader';
-import AppFooter from './components/AppFooter'
+import AppFooter from './components/AppFooter';
+import JumboTron from './components/JumboTron';
 
 const App = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -12,8 +13,8 @@ const App = () => {
       <AppHeader></AppHeader>
       <ScrollContainer>
         <ScrollPage>
-          <Animator animation={FadeUp}>
-            <span style={{ fontSize: "40px" }}>I'm FadeUp ⛅️</span>
+          <Animator style={{ width: "100%" }} animation={FadeUp}>
+            <JumboTron></JumboTron>
           </Animator>
         </ScrollPage>
         <ScrollPage className='bg-danger'>
@@ -28,7 +29,7 @@ const App = () => {
         </ScrollPage>
       </ScrollContainer>
       <AppFooter></AppFooter>
-    </div>
+    </div >
   )
 }
 
