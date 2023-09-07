@@ -1,0 +1,17 @@
+/* #region appHeader  */
+.appHeader {
+  position: fixed;
+  width: 100%;
+  top:0; 
+  z-index: 1000;
+}
+
+.logo_image {
+  height: 34px;
+}
+
+.logo_image img {
+  height: 100%;
+}
+
+/* #endregion appHeader  */
