@@ -11,7 +11,7 @@ const AppHeader = () => {
                     <i class="fa-brands fa-youtube fa-xl"></i>
                 </div>
                 <div className='logo_image'>
-                    <img src="../../public/img/news-logo.png" alt="" />
+                    <img src="../../public/img/detales_logo.png" alt="" />
                 </div>
                 <div>
                     <a href="" className='text-white text-decoration-none me-2'>Newsletter</a>

@@ -18,9 +18,6 @@ const AppHeader = () => {
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Home</a></li>
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">About</a></li>
                         </ul>
                     </div>
 
@@ -29,9 +26,6 @@ const AppHeader = () => {
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Home</a></li>
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">About</a></li>
                         </ul>
                     </div>
 
@@ -40,9 +34,6 @@ const AppHeader = () => {
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Home</a></li>
                             <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Features</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">Pricing</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">FAQs</a></li>
-                            <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-white">About</a></li>
                         </ul>
                     </div>
                 </footer>
