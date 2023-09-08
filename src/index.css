@@ -5,16 +5,14 @@
 }
 
 /* #endregion appHeader  */
+header {
+  height: 200px;
+}
 .appHeader {
   position: fixed;
   width: 100%;
   top:0; 
   z-index: 1000;
-}
-
-.subHeader {
-  height: 100px;
-  width: 100%;
 }
 
 .logo_image {
@@ -35,4 +33,17 @@
 
 }
 
+.main_image {
+  height: 500px;
+}
+
+.main_image img {
+  height: 100%;
+  width: 100%;
+}
+
 /* #endregion jumbotron */
+
+.latest_story {
+  max-height: 230px;
+}

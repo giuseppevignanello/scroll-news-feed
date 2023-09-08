@@ -19,9 +19,7 @@ const AppHeader = () => {
                         <a href="" className='text-white text-decoration-none me-2'>About Us</a>
                     </div>
                 </div>
-                <div className='subHeader d-flex align-items-end justify-content-center bg_tertiary'>
-                    <span className='mb-1'>Little big stories</span>
-                </div>
+
             </header>
         </div>
     )
