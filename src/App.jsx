@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
 import JumboTron from './components/JumboTron';
+import axios from 'axios';
+
+
 
 const App = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
+  const apiUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=cc25f499492641a6b1e29f46c842941e';
+  const [news, setNews] = useState([]);
+
+
+
+  useEffect(() => {
+    axios.get(apiUrl)
+      .then(response => {
+        setNews(response.data);
+        console.log(news.articles[0].title)
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
 
   return (
     <div>
@@ -14,7 +32,7 @@ const App = () => {
       <ScrollContainer>
         <ScrollPage>
           <Animator style={{ width: "100%" }} animation={FadeUp}>
-            <JumboTron></JumboTron>
+            <JumboTron news={news}></JumboTron>
           </Animator>
         </ScrollPage>
         <ScrollPage>
@@ -24,21 +42,21 @@ const App = () => {
               <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, 900)}>
                 <div className="card-body bg-black">
                   <span className='bg_tertiary text-black p-1'>Stories</span>
-                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <h4 className="card-title text-wrap mt-1">{news.articles[1].title} </h4>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
               <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, -900)}>
                 <div className="card-body bg-black">
                   <span className='bg_tertiary text-black p-1'>Ideas</span>
-                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <h4 className="card-title text-wrap mt-1">{news.articles[2].title}  </h4>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
               <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, 900)}>
                 <div className="card-body bg-black">
                   <span className='bg_tertiary text-black p-1'>Places</span>
-                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <h4 className="card-title text-wrap mt-1">{news.articles[3].title} </h4>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
@@ -46,7 +64,7 @@ const App = () => {
 
                 <div className="card-body bg-black">
                   <span className='bg_tertiary text-black p-1'>People</span>
-                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <h4 className="card-title text-wrap mt-1">{news.articles[4].title} </h4>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
 
