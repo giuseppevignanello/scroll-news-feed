@@ -17,48 +17,44 @@ const App = () => {
             <JumboTron></JumboTron>
           </Animator>
         </ScrollPage>
-        <div className="container">
-          <ScrollPage >
-            <div className='d-flex justify-content-between gap-2 row-cols-2 row-cols-md-4'>
-              <Animator animation={MoveIn(0, 1000)}>
-                <div className="card bg-black text-white">
-                  <div className="card-body">
-                    <span className='bg_tertiary text-black p-1'>Stories</span>
-                    <h4 className="card-title text-wrap">Lorem ipsum dolor sit amet consectetur </h4>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
-                  </div>
+        <ScrollPage>
+          <div className='container' style={{ marginTop: '10rem' }}>
+            <h2 className='ms-2'>Latest stories</h2>
+            <div className='d-flex justify-content-between align-items-center row-cols-2 row-cols-md-4 h-100 flex-wrap'>
+              <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, 900)}>
+                <div className="card-body bg-black">
+                  <span className='bg_tertiary text-black p-1'>Stories</span>
+                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
-              <Animator animation={MoveIn(0, 1000)}>
-                <div className="card bg-black text-white">
-                  <div className="card-body">
-                    <span className='bg_tertiary text-black p-1'>People</span>
-                    <h4 className="card-title text-wrap">Lorem ipsum dolor sit amet consectetur </h4>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
-                  </div>
+              <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, -900)}>
+                <div className="card-body bg-black">
+                  <span className='bg_tertiary text-black p-1'>Ideas</span>
+                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
-              <Animator animation={MoveIn(0, 1000)}>
-                <div className="card bg-black text-white">
-                  <div className="card-body">
-                    <span className='bg_tertiary text-black p-1'>Places</span>
-                    <h4 className="card-title text-wrap">Lorem ipsum dolor sit amet consectetur </h4>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
-                  </div>
+              <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, 900)}>
+                <div className="card-body bg-black">
+                  <span className='bg_tertiary text-black p-1'>Places</span>
+                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
               </Animator>
-              <Animator animation={MoveIn(0, 1000)}>
-                <div className="card bg-black text-white">
-                  <div className="card-body">
-                    <span className='bg_tertiary text-black p-1'>Ideas</span>
-                    <h4 className="card-title text-wrap">Lorem ipsum dolor sit amet consectetur </h4>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
-                  </div>
+              <Animator className='card border-0 text-white my-2 p-2 h-25' animation={MoveIn(0, -900)}>
+
+                <div className="card-body bg-black">
+                  <span className='bg_tertiary text-black p-1'>People</span>
+                  <h4 className="card-title text-wrap mt-1">Lorem ipsum dolor sit amet consectetur </h4>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi distinctio placeat.</p>
                 </div>
+
               </Animator>
+
             </div>
-          </ScrollPage>
-        </div>
+          </div>
+        </ScrollPage>
         <ScrollPage className='bg-danger'>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
             <span style={{ fontSize: "40px" }}>
