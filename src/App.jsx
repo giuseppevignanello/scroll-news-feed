@@ -55,7 +55,7 @@ const App = () => {
             </div>
           </div>
         </ScrollPage>
-        <ScrollPage className='bg-danger'>
+        <ScrollPage className='bg_tertiary'>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
             <span style={{ fontSize: "40px" }}>
               <Animator className='card my-2 p-2' animation={MoveIn(-1000, 0)}>Stories</Animator>

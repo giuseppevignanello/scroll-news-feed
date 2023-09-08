@@ -14,8 +14,9 @@ const AppHeader = () => {
                     <div className='logo_image'>
                         <img src="../../public/img/detales_logo.png" alt="" />
                     </div>
-                    <div>
+                    <div className='d-flex gap-3'>
                         <a href="" className='text-white text-decoration-none me-2'>Newsletter</a>
+                        <a href="" className='text-white text-decoration-none me-2'>About Us</a>
                     </div>
                 </div>
                 <div className='subHeader d-flex align-items-end justify-content-center bg_tertiary'>
