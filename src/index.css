@@ -12,6 +12,11 @@
   z-index: 1000;
 }
 
+.subHeader {
+  height: 100px;
+  width: 100%;
+}
+
 .logo_image {
   height: 34px;
 }
