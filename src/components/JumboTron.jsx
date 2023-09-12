@@ -4,7 +4,7 @@ const JumboTron = () => {
 
     return (
         <div>
-            <div className="p-5 mb-4 rounded-3 bg-black text-white">
+            <div className="p-5 mb-4 rounded-3 bg-black text-white mt-5">
                 <div className="container-fluid py-5">
                     <h1 className="display-5 fw-bold">Un piccolo, minuscolo, pezzo di vetro</h1>
                     <p className="col-md-8 fs-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ullam harum iusto deleniti, id sint possimus modi, eligendi culpa consectetur ad perferendis corporis consequuntur deserunt..</p>

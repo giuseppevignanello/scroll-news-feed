@@ -16,7 +16,6 @@ const AppHeader = () => {
                     </div>
                     <div className='d-flex gap-3'>
                         <a href="" className='text-white text-decoration-none me-2'>Newsletter</a>
-                        <a href="" className='text-white text-decoration-none me-2'>About Us</a>
                     </div>
                 </div>
 

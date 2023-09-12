@@ -22,9 +22,9 @@ const App = () => {
           </Animator>
         </ScrollPage>
         <ScrollPage>
-          <div className='container' style={{ marginTop: '6rem' }}>
+          <div className='container'>
             <h2 className='ms-2'>Latest stories</h2>
-            <div className='d-flex justify-content-between align-items-center row-cols-1 row-cols-sm-2 row-cols-md-4 h-100 flex-wrap'>
+            <div className='d-flex justify-content-between align-items-center row-cols-1 row-cols-sm-2 row-cols-md-4 h-100 flex-wrap mb-5'>
               <Animator className='card border-0 text-white my-2 p-2 latest_story' animation={MoveIn(0, 900)}>
                 <div className="card-body bg-black">
                   <span className='bg_tertiary text-black p-1'>Stories</span>
